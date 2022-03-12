@@ -16,7 +16,7 @@ const Hero = (props) => (
         I am a Frontend Web develop building reactive and responsive Web apps using ReactJs. <br/>
         I also build DApps using ReactJs/Solidity.
       </SectionText>
-      <Button>Contact Me</Button>
+      <Button onClick={() => window.location = 'mailto:akaudeh@gmail.com'}>Contact Me</Button>
     </LeftSection>
   </Section>
 );
