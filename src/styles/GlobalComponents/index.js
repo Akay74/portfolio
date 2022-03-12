@@ -39,8 +39,8 @@ export const SectionTitle = styled.h2`
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '50px' : '45px'};
     line-height: ${(props) => props.main ? '30px' : '20px'};
-    margin-bottom: 12px;
-    padding: ${(props) => props.main ? '40px 0 12px' : '0'};
+    margin-bottom: ${(props) => props.main ? '0px' : '12px'};
+    padding: ${(props) => props.main ? '10px 0 12px' : '0'};
   }
 
   @media ${props => props.theme.breakpoints.sm}{
@@ -176,7 +176,7 @@ export const ButtonBack = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
+  margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 20px'};
   color: #fff;
   background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
   cursor: pointer;
