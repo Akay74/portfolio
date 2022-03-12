@@ -4,7 +4,7 @@ export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
-  margin: 3rem auto;
+  margin: 2rem auto;
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
@@ -20,7 +20,7 @@ export const Section = styled.section`
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
     width: calc(100vw - 32px);
     flex-direction: column;
-    margin: 0 auto;
+    margin: 1rem auto 2rem;
   }
 `
 
@@ -71,7 +71,7 @@ export const SectionText = styled.p`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 25px;
     padding-bottom: 16px;
   }
 `
@@ -196,7 +196,7 @@ export const ButtonBack = styled.div`
     width: 40%;
     height: 40px;
     font-size: 14px;
-    margin: ${({ alt }) => alt ? 'auto' : 'auto'};
+    margin: ${({ alt }) => alt ? 'auto' : '1rem 0'};
   }
 `
 
