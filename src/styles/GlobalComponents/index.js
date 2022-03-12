@@ -20,7 +20,7 @@ export const Section = styled.section`
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
     width: calc(100vw - 32px);
     flex-direction: column;
-    margin: 1rem auto 2rem;
+    margin: 2rem auto 3rem;
   }
 `
 

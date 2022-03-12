@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin, AiOutlineWhatsApp } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
-
+import { AiFillGithub, AiFillTwitterCircle, AiOutlineWhatsApp } from 'react-icons/ai';
+import { SecondaryBtn } from '../../styles/GlobalComponents';
+import NavDropDown from '../NavDropDown';
 import { Container, Div1, Div2, Div3, Anchor, NavLink, Span, SocialIcons } from './HeaderStyles';
 
 const Header = () =>  (
@@ -16,6 +16,8 @@ const Header = () =>  (
         </Anchor>
       </Link>
     </Div1>
+
+    {/*<SecondaryBtn onClick={NavDropDown}/>*/}
 
     <Div2>
       <li>

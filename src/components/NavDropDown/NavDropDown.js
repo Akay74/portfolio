@@ -54,6 +54,11 @@ export const DropDownIcon = styled.div`
   height: 32px;
   margin-right: 16px;
 `
+export const DropDownIconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`
 
 export const DropDownTextContainer = styled.div`
   display: flex;
