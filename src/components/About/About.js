@@ -14,8 +14,7 @@ const About = () => (
     }} whileInView={{ x: 0,
     opacity: 1,
     transition:{
-      duration: 1,
-      delay: 0.5,
+      duration: 0.6
     }}} />
     <SectionTitle as={motion.h2} initial = {{
     x: 200,
@@ -23,8 +22,7 @@ const About = () => (
     }} whileInView={{ x: 0,
     opacity: 1,
     transition:{
-      duration: 1,
-      delay: 0.5,
+      duration: 0.5,
     }}}>
       About
     </SectionTitle>
@@ -36,9 +34,8 @@ const About = () => (
       y: 0,
       opacity: 1,
       transition:{
-        duration: 1,
-        delay: 1,
-        ease: easing,
+        duration: 0.5,
+        delay: 0.2
       }}}
     >
       I build things, beautiful things! I'm very detail oriented and can create rich
