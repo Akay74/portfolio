@@ -1,18 +1,39 @@
 import React from 'react';
 import { AiFillGithub, AiOutlineWhatsApp, AiFillTwitterCircle } from 'react-icons/ai';
-
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper as={motion.section}>
       <LinkList>
-        <LinkColumn>
+        <LinkColumn as={motion.div} initial={{
+        x: -60,
+        opacity: 0
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          transition:{
+            duration: 0.7,
+            delay: 0.2,
+        }}}>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:+2348164497136">+234 816 4497 136</LinkItem>
         </LinkColumn>
-        <LinkColumn>
+
+        <LinkColumn as={motion.div} initial={{
+          x: -60,
+          opacity: 0
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition:{
+              duration: 0.7,
+              delay: 0.4,
+          }}}>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href='mailto:akaudeh@gmail.com'>
             akaudeh@gmail.com
@@ -20,11 +41,32 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
-        <CompanyContainer>
+
+        <CompanyContainer as={motion.div} initial={{
+        x: -60,
+        opacity: 0
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          transition:{
+            duration: 0.7,
+            delay: 0.6,
+        }}}>
           <Slogan>Innovating one project at a time</Slogan>
         </CompanyContainer>
 
-        <SocialContainer>
+        <SocialContainer as={motion.div} initial={{
+        y: 60,
+        opacity: 0
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+          transition:{
+            duration: 0.5,
+            delay: 0.8
+          }}}>
           <SocialIcons href="https://github.com/Akay74" target='_blank'>
             <AiFillGithub size="3rem" />
           </SocialIcons>

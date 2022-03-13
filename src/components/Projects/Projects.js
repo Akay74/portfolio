@@ -26,7 +26,7 @@ const Projects = () => (
       delay: 0.3
     }}}>Projects</SectionTitle>
 
-    <GridContainer>
+    <GridContainer >
       {projects.map(({id, image, title, description, tags, source, visit}) => (
         <BlogCard as={motion.div} key = {id} className="card" whileHover={{
           position: 'relative',
@@ -35,7 +35,17 @@ const Projects = () => (
           transition: {
             duration: .4
           }
-        }}>
+          }} initial={{
+          y: 60,
+          opacity: 0
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition:{
+              duration: 0.5,
+              delay: 0.5,
+          }}}>
           <Img src={image}/>
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
