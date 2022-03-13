@@ -4,67 +4,43 @@ import {motion} from 'framer-motion';
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 
-const fadeInLeft = {
-  initial:{
+
+
+const About = () => (
+  <Section id='about' as={motion.div} exit = {{opacity:0}} initial = "initial" animate = "animate">
+    <SectionDivider as={motion.div}   initial = {{
     x: 200,
     opacity: 0
-  },
-  animate:{
-    x: 0,
-    opacity: 1,
-    transition:{
-      duration: 1,
-      ease: easing,
-    }
-  }
-};
-
-const fadeInUp = {
-  initial:{
-    y: 60,
-    opacity: 0
-  },
-  animate:{
-    y: 0,
-    opacity: 1,
-    transition:{
-      duration: 1,
-      delay: 1,
-      ease: easing,
-    }
-  }
-};
-  
-const stagger = {
-  animate:{
-    transition:{
-      staggerChildren: 0.15
-    }
-  }
-};
-
-const leftDelay = {
-  initial:{
-    x: 200,
-    opacity: 0
-  },
-  animate:{
-    x: 0,
+    }} whileInView={{ x: 0,
     opacity: 1,
     transition:{
       duration: 1,
       delay: 0.5,
-    }
-  }
-};
-
-const About = () => (
-  <Section id='about' as={motion.div} exit = {{opacity:0}} initial = "initial" animate = "animate">
-    <SectionDivider as={motion.div} variants={fadeInLeft} />
-    <SectionTitle as={motion.h2} variants={leftDelay}>
+    }}} />
+    <SectionTitle as={motion.h2} initial = {{
+    x: 200,
+    opacity: 0
+    }} whileInView={{ x: 0,
+    opacity: 1,
+    transition:{
+      duration: 1,
+      delay: 0.5,
+    }}}>
       About
     </SectionTitle>
-    <SectionText as={motion.p} variants={fadeInUp}>
+    <SectionText as={motion.p}   initial={{
+    y: 60,
+    opacity: 0
+    }}
+    whileInView={{
+      y: 0,
+      opacity: 1,
+      transition:{
+        duration: 1,
+        delay: 1,
+        ease: easing,
+      }}}
+    >
       I build things, beautiful things! I'm very detail oriented and can create rich
       web applications with complex user interfaces.<br/>
       <br/>
