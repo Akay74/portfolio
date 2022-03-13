@@ -3,6 +3,7 @@ import React from 'react';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+import { motion } from 'framer-motion';
 
 const Projects = () => (
   <Section nomapping id='projects'>
@@ -12,7 +13,14 @@ const Projects = () => (
 
     <GridContainer>
       {projects.map(({id, image, title, description, tags, source, visit}) => (
-        <BlogCard key = {id}>
+        <BlogCard as={motion.div} key = {id} className="card" whileHover={{
+          position: 'relative',
+          zIndex: 1,
+          scale: 1.04,
+          transition: {
+            duration: .4
+          }
+        }}>
           <Img src={image}/>
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
