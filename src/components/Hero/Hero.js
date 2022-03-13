@@ -8,7 +8,7 @@ const Hero = (props) => (
   <Section as={motion.div} row nopadding exit = {{opacity:0}} initial = "initial" animate = "whileInView">
     <LeftSection as={motion.div}>
       <SmallHeroText as={motion.p} initial={{
-      y: -20,
+      y: -10,
       opacity: 0
       }}
       whileInView={{

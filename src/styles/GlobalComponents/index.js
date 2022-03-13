@@ -3,8 +3,9 @@ import styled from 'styled-components'
 export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
-  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
-  margin: 2rem auto;
+  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" };
+  height: ${props => props.main ? "90%" : "auto"};
+  margin: 3rem auto;
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
@@ -20,7 +21,7 @@ export const Section = styled.section`
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
     width: calc(100vw - 32px);
     flex-direction: column;
-    margin: 2rem auto 3rem;
+    margin: 4rem auto;
   }
 `
 
