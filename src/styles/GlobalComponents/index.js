@@ -29,6 +29,7 @@ export const SectionTitle = styled.h2`
   font-weight: 500;
   font-size: ${(props) => props.main ? '60px' : '50px'};
   line-height: ${(props) => props.main ? '70px' : '56px'};
+  margin-bottom: 3rem;
   text-align: right;
   width: max-content;
   max-width: 100%;
@@ -49,7 +50,7 @@ export const SectionTitle = styled.h2`
     line-height: 40px;
     font-size: ${(props) => props.main ? '40px' : '32px'};
     line-height: ${(props) => props.main ? '32px' : '40px'};
-    margin: ${(props) => props.main ? '0 0 15px' : '0 auto 15px;'}
+    margin: ${(props) => props.main ? '0 0 15px' : '0 auto 30px;'}
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
     max-width: 100%;
   }
