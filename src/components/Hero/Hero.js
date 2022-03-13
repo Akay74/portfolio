@@ -15,7 +15,7 @@ const Hero = (props) => (
         y: 0,
         opacity: 1,
         transition:{
-          duration: 0.4,
+          duration: 0.6,
           delay: 0.2,
       }}}>Hello, I am</SmallHeroText>
 
@@ -27,8 +27,8 @@ const Hero = (props) => (
         x: 0,
         opacity: 1,
         transition:{
-          duration: 0.5,
-          delay: 0.6,
+          duration: 0.7,
+          delay: 0.8,
           type: "spring"
       }}}>
         DAVIK
@@ -40,8 +40,8 @@ const Hero = (props) => (
       whileInView={{
         opacity: 1,
         transition:{
-          duration: 0.3,
-          delay: 1,
+          duration: 0.5,
+          delay: 1.2,
       }}}>FullStack Smart Contract Engineer</TitleSubText><br/>
 
       <SectionText as={motion.p} initial={{
@@ -53,7 +53,7 @@ const Hero = (props) => (
         opacity: 1,
         transition:{
           duration: 0.7,
-          delay: 1.1,
+          delay: 1.3,
       }}}>
         I am a Frontend Web developer building reactive and responsive Web apps using ReactJs. <br/>
         I also build DApps using ReactJs/Solidity.
