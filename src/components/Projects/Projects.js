@@ -6,10 +6,25 @@ import { projects } from '../../constants/constants';
 import { motion } from 'framer-motion';
 
 const Projects = () => (
-  <Section nomapping id='projects'>
-    <SectionDivider/>
+  <Section nomapping id='projects' as={motion.section}>
+        <SectionDivider as={motion.div}   initial = {{
+    x: 200,
+    opacity: 0
+    }} whileInView={{ x: 0,
+    opacity: 1,
+    transition:{
+      duration: 0.5
+    }}} />
 
-    <SectionTitle>Projects</SectionTitle>
+    <SectionTitle as={motion.h2} initial = {{
+    x: 200,
+    opacity: 0
+    }} whileInView={{ x: 0,
+    opacity: 1,
+    transition:{
+      duration: 0.5,
+      delay: 0.3
+    }}}>Projects</SectionTitle>
 
     <GridContainer>
       {projects.map(({id, image, title, description, tags, source, visit}) => (

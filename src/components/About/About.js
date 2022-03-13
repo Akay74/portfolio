@@ -16,6 +16,7 @@ const About = () => (
     transition:{
       duration: 0.5
     }}} />
+
     <SectionTitle as={motion.h2} initial = {{
     x: 200,
     opacity: 0
@@ -27,6 +28,7 @@ const About = () => (
     }}}>
       About
     </SectionTitle>
+
     <SectionText as={motion.p} initial={{
     y: 60,
     opacity: 0
@@ -36,7 +38,7 @@ const About = () => (
       opacity: 1,
       transition:{
         duration: 0.7,
-        delay: 0.4,
+        delay: 0.8,
       }}}
     >
       I build things, beautiful things! I'm very detail oriented and can create rich
@@ -47,6 +49,7 @@ const About = () => (
       Ethereum Smart Contract Development using Soldity,<br/>
       Front-end libraries such as React and Redux.
     </SectionText>
+
   </Section>
 );
 

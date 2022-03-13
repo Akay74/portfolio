@@ -4,8 +4,6 @@ import { AiFillGithub, AiFillTwitterCircle, AiOutlineWhatsApp } from 'react-icon
 import { Container, Div1, Div2, Div3, Anchor, NavLink, Span, SocialIcons } from './HeaderStyles';
 import { motion } from 'framer-motion';
 
-const easing = [0.6, -0.05, 0.01, 0.99];
-
 const fadeInUp = {
     initial:{
       y: -70,
@@ -17,14 +15,6 @@ const fadeInUp = {
       transition:{
         delay: 1.2,
         duration: 0.8,
-      }
-    }
-  };
-  
-  const stagger = {
-    animate:{
-      transition:{
-        staggerChildren: 0.3
       }
     }
   };
@@ -41,20 +31,50 @@ const Header = (props) =>  (
       </Link>
     </Div1>
 
-    <Div2 as={motion.div} variants={stagger}>
-      <motion.li variants={fadeInUp}>
+    <Div2 as={motion.div} >
+      <motion.li initial={{
+      y: -60,
+      opacity: 0
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition:{
+          duration: 0.5,
+          delay: 0.9,
+      }}}>
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
       </motion.li>
 
-      <motion.li variants={fadeInUp}>
+      <motion.li initial={{
+      y: -60,
+      opacity: 0
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition:{
+          duration: 0.5,
+          delay: 1.1,
+      }}}>
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
       </motion.li>
 
-      <motion.li variants={fadeInUp}>
+      <motion.li initial={{
+      y: -60,
+      opacity: 0
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition:{
+          duration: 0.5,
+          delay: 1.3,
+      }}}>
         <Link href="#projects">
           <NavLink>Projects</NavLink>
         </Link>
