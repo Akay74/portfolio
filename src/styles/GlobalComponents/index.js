@@ -4,8 +4,7 @@ export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" };
-  height: ${props => props.main ? "90%" : "auto"};
-  margin: 3rem auto 5rem;
+  margin: ${props => props.main ? '0rem auto 5rem' : '2rem auto 5rem'};
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
@@ -29,8 +28,8 @@ export const SectionTitle = styled.h2`
   font-weight: 500;
   font-size: ${(props) => props.main ? '70px' : '60px'};
   line-height: ${(props) => props.main ? '70px' : '56px'};
-  margin-bottom: 3rem;
-  text-align: right;
+  margin: ${props => props.main ? '0 0 3rem' : '0 auto 3rem'};
+  text-align: Center;
   width: max-content;
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
@@ -174,7 +173,7 @@ export const ButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '200px'};
   height: ${({ alt }) => alt ? '48px' : '50px'};
   border-radius: 10px;
-  font-size: ${({ alt }) => alt ? '20px' : '18px'};
+  font-size: ${({ alt }) => alt ? '23px' : '22px'};
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -196,9 +195,9 @@ export const ButtonBack = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 40%;
-    height: 40px;
-    font-size: 14px;
+    width: 45%;
+    height: 50px;
+    font-size: 20px;
     margin: ${({ alt }) => alt ? 'auto' : '1rem 0'};
   }
 `
@@ -216,7 +215,7 @@ export const ButtonFront = styled.button`
   background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
-  font-size: ${({ alt }) => alt ? '18px' : '16px'};
+  font-size: ${({ alt }) => alt ? '21px' : '20px'};
   font-weight: 600;
   align-items: center;
   justify-content: center;
@@ -241,11 +240,11 @@ export const ButtonFront = styled.button`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    font-size: ${({ alt }) => alt ? '20px' : '18px'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
+    font-size: 20px;
   }
 `
 
