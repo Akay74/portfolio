@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <FooterWrapper as={motion.section}>
-      <LinkList>
+      <LinkList as={motion.section}>
         <LinkColumn as={motion.div} initial={{
         x: -60,
         opacity: 0

@@ -155,5 +155,6 @@ export const LinkTitle = styled.h4`
 		font-size: 10px;
 		line-height: 12px;
 		margin-bottom: 8px;
+		translateX(0px) translateY(0px) translateZ(0px);
 	}
 `
