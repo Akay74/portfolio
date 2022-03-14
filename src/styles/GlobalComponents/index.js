@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" };
   height: ${props => props.main ? "90%" : "auto"};
-  margin: 3rem auto;
+  margin: 3rem auto 5rem;
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
@@ -21,13 +21,13 @@ export const Section = styled.section`
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
     width: calc(100vw - 32px);
     flex-direction: column;
-    margin: 2rem auto 2rem;
+    margin: 2rem auto 4rem;
   }
 `
 
 export const SectionTitle = styled.h2`
   font-weight: 500;
-  font-size: ${(props) => props.main ? '70px' : '50px'};
+  font-size: ${(props) => props.main ? '70px' : '60px'};
   line-height: ${(props) => props.main ? '70px' : '56px'};
   margin-bottom: 3rem;
   text-align: right;
@@ -48,7 +48,7 @@ export const SectionTitle = styled.h2`
   @media ${props => props.theme.breakpoints.sm}{
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => props.main ? '60px' : '32px'};
+    font-size: ${(props) => props.main ? '60px' : '50px'};
     line-height: ${(props) => props.main ? '32px' : '40px'};
     margin: ${(props) => props.main ? '0 0 15px' : '0 auto 30px;'}
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
@@ -80,25 +80,26 @@ export const SectionText = styled.p`
 
 export const SectionDivider = styled.div`
 
-  width: 80px;
+  width: 100px;
   height: 1px;
   border-radius: 10px;
   background-color: #fff;
   background: ${(props) => props.colorAlt ? 
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
     'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
-
-  margin: "0";
+  
+  margin: 0 auto .7rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
+    width: 100px;
     height: 4px;
+    margin: 0 auto .7rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
+    width: 100px;
     height: 2px;
-    margin: auto;
+    margin: 0 auto .7rem;
   }
 `
 export const SectionSubText = styled.p`

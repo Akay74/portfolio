@@ -19,7 +19,7 @@ export const LeftSection = styled.div`
 `;
 
 export const TitleSubText = styled.p`
-  font-size: 50px;
+  font-size: 45px;
   margin: .5rem 0 .5rem;
   font-weight: 400;
   line-height: 45px;
