@@ -9,11 +9,11 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 padding: 3rem;
 place-items: center;
-column-gap: 2rem;
-row-gap: 3rem;
+column-gap: 5rem;
+row-gap: 5rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
@@ -27,6 +27,7 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  margin: 2rem auto;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -38,11 +39,24 @@ export const TitleContent = styled.div`
 
 `;
 
+export const SubTitleContent = styled.div`
+  text-align: center;
+  z-index: 20;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #9cc9e3;
+`;
+
+
 export const HeaderThree = styled.h3`
   font-weight: 400;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: .5rem 0;
+  margin: 2.5rem 0 1rem;
+  padding: 1rem 0 1rem;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
 
@@ -68,7 +82,7 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
-  font-style: 2rem;
+  font-size: 14px;
   line-height: 20px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -91,7 +105,7 @@ color:#d4c0c0;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
 background: #6b3030;
-border-radius: 15px;
+border-radius: 5px;
 transition: 0.5s;
 &:hover{
   background: #801414;

@@ -33,6 +33,7 @@ export const Anchor = styled.div`
 `;
 export const Span = styled.div`
 font-size: 2.5rem;
+font-weight: 700;
 `;
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;

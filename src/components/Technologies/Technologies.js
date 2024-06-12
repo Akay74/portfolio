@@ -1,19 +1,66 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact } from 'react-icons/di';
+import { SiEthereum} from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { motion } from 'framer-motion';
+
+const stagger = {
+  animate:{
+    transition:{
+      staggerChildren: 0.1
+    }
+  }
+};
 
 const Technologies = () =>  (
-  <Section id='tech'>
-    <SectionDivider/>
-    <SectionTitle>Tech Stack</SectionTitle>
-    <SectionText>
+  <Section id='tech' as={motion.section} initial="initial" animate="animate">
+    <SectionDivider as={motion.div}   initial = {{
+    x: 200,
+    opacity: 0
+    }} whileInView={{ x: 0,
+    opacity: 1,
+    transition:{
+      duration: 0.5
+    }}} />
+
+    <SectionTitle as={motion.h2} initial = {{
+    x: 200,
+    opacity: 0
+    }} whileInView={{ x: 0,
+    opacity: 1,
+    transition:{
+      duration: 0.5,
+      delay: 0.3
+    }}}>Tech Stack</SectionTitle>
+
+    <SectionText as={motion.p} initial={{
+    y: 60,
+    opacity: 0
+    }}
+    whileInView={{
+      y: 0,
+      opacity: 1,
+      transition:{
+        duration: 0.7,
+        delay: 0.8,
+      }}}>
       I've worked with a few technologies in the web2 and web3 development field.<br/>
       Some of the tools I'm familiar with include:
     </SectionText>
-    <List>
-      <ListItem>
-        <DiReact size="3rem" />
+
+    <List as={motion.ul} transition={{staggerChildren: 0.1}}>
+
+      <ListItem as={motion.li} initial = {{
+      x: -50,
+      opacity: 0
+      }} whileInView={{ x: 0,
+      opacity: 1,
+      transition:{
+        duration: 0.5,
+        delay: 0.5
+      }}}>
+        <DiReact size="5rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -28,20 +75,36 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
 
-      <ListItem>
-        <DiReact size="3rem" />
+      <ListItem as={motion.li} initial = {{
+      x: -50,
+      opacity: 0
+      }} whileInView={{ x: 0,
+      opacity: 1,
+      transition:{
+        duration: 0.5,
+        delay: 0.7
+      }}}>
+        <DiFirebase size="5rem" />
         <ListContainer>
           <ListTitle>Backend</ListTitle>
           <ListParagraph>
             Experience with <br/>
-            NodeJs
+            NodeJs<br/>
             Express
           </ListParagraph>
         </ListContainer>
       </ListItem>
 
-      <ListItem>
-        <DiReact size="3rem" />
+      <ListItem as={motion.li} initial = {{
+      x: -50,
+      opacity: 0
+      }} whileInView={{ x: 0,
+      opacity: 1,
+      transition:{
+        duration: 0.5,
+        delay: 0.9
+      }}}>
+        <SiEthereum size="5rem" />
         <ListContainer>
           <ListTitle>Blockchain</ListTitle>
           <ListParagraph>

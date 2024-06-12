@@ -1,40 +1,84 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin, AiOutlineWhatsApp } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
-
+import { AiFillGithub, AiFillTwitterCircle, AiOutlineWhatsApp } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, Anchor, NavLink, Span, SocialIcons } from './HeaderStyles';
+import { motion } from 'framer-motion';
 
-const Header = () =>  (
+const fadeInUp = {
+    initial:{
+      y: -70,
+      opacity: 0
+    },
+    animate:{
+      y: 0,
+      opacity: 1,
+      transition:{
+        delay: 1.2,
+        duration: 0.8,
+      }
+    }
+  };
+
+const Header = (props) =>  (
   // working with styled components
-  <Container>
+  <Container as={motion.div} exit = {{opacity:0}} initial = "initial" animate = "animate">
 
     <Div1>
       <Link href="/">
         <Anchor>
-          <Span>DAVIK™</Span>
+          <Span>Akay™</Span>
         </Anchor>
       </Link>
     </Div1>
 
-    <Div2>
-      <li>
+    <Div2 as={motion.div} >
+      <motion.li initial={{
+      y: -60,
+      opacity: 0
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition:{
+          duration: 0.5,
+          delay: 1.0,
+      }}}>
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
-      </li>
+      </motion.li>
 
-      <li>
+      <motion.li initial={{
+      y: -60,
+      opacity: 0
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition:{
+          duration: 0.5,
+          delay: 1.2,
+      }}}>
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
-      </li>
+      </motion.li>
 
-      <li>
+      <motion.li initial={{
+      y: -60,
+      opacity: 0
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition:{
+          duration: 0.5,
+          delay: 1.4,
+      }}}>
         <Link href="#projects">
           <NavLink>Projects</NavLink>
         </Link>
-      </li>
+      </motion.li>
 
     </Div2>
 
@@ -43,7 +87,7 @@ const Header = () =>  (
         <AiFillGithub size="3rem" />
       </SocialIcons>
 
-      <SocialIcons href='https://wa.me/+2348164497136' target='_blank'>
+      <SocialIcons href='https://wa.me/+2348183969173' target='_blank'>
         <AiOutlineWhatsApp size="3rem" />
       </SocialIcons>
 
