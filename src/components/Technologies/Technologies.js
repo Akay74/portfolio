@@ -68,8 +68,10 @@ const Technologies = () =>  (
             HTML/CSS <br/>
             Bootstrap <br/>
             SASS/SCSS <br/>
-            MaterialUI <br/>
-            React.js<br/>
+            TailwindCSS<br/>
+            JavaScript/TypeScript<br/>
+            ReactJs<br/>
+            VueJs<br/>
             Redux
           </ListParagraph>
         </ListContainer>
@@ -90,7 +92,11 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with <br/>
             NodeJs<br/>
-            Express
+            Express<br/>
+            NestJs<br/>
+            Firebase<br/>
+            MongoDB<br/>
+
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -110,8 +116,9 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with <br/>
             Solidity<br/>
-            Truffle<br/>
-            Hardhat
+            Foundry<br/>
+            Hardhat<br/>
+            Slither
           </ListParagraph>
         </ListContainer>
       </ListItem>
