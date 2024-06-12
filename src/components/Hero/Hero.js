@@ -40,7 +40,7 @@ const Hero = (props) => (
         transition:{
           duration: 0.5,
           delay: 1.2,
-      }}}>FullStack Blockchain Engineer</TitleSubText><br/>
+      }}}>FullStack Engineer</TitleSubText><br/>
 
       <SectionText as={motion.p} initial={{
       y: 60,
@@ -53,7 +53,7 @@ const Hero = (props) => (
           duration: 0.7,
           delay: 1.3,
       }}}>
-        I am a Blockchain engineer building reactive and responsive Web and native DApps. <br/>
+        I am a fullstack engineer building reactive and responsive web2, web3 and native secure applications. <br/>
       </SectionText><br/>
 
       <motion.div>

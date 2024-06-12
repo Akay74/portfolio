@@ -67,10 +67,10 @@ const Technologies = () =>  (
             Experience with <br/>
             HTML/CSS <br/>
             Bootstrap <br/>
-            SASS/SCSS <br/>
             TailwindCSS<br/>
             JavaScript/TypeScript<br/>
             ReactJs<br/>
+            React Native<br/>
             VueJs<br/>
             Redux
           </ListParagraph>

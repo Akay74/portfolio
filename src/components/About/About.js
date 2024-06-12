@@ -44,10 +44,10 @@ const About = () => (
       I build things, beautiful things! I'm very detail oriented and I create rich
       web and native decentralized applications with complex user interfaces.<br/>
       <br/>
-      I have over 3 year of experience with fullstack blockchain development.
-      I'm competent in frameworks such as Foundry and Hardhat for smart contract development.<br/>
+      I have over 3 year of experience with scaling start ups and businesses as a fullstack developer.
+      I'm competent in frameworks such as VueJS, ReactJS and React Native for frontend, Node and NestJS for server-side, Foundry and Hardhat for smart contract development.<br/>
       My can-do attitude to work as well as my grit enable me tackle and surmount problems I encounter during the process of building.<br/>
-      I've worked well as a solo developer and a team player to ship DApps that power businesses.<br/>
+      I've worked well as a solo developer and a team player to ship quality apps that power businesses.<br/>
     </SectionText>
 
   </Section>
