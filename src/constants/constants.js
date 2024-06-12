@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: 'Placeholder',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: '/images/1.png',
-    tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'Big Green Dildo NFT',
+    description: "Using React, Solidity and the power of WalletConnect, I built the NFT Mint DApp for the Big Green Dildo collection that randomly mints one of the NFTs in the 10,000 NFT collection to the user. The NFT Dapp is deployed on the Ethereum mainnet",
+    image: '/images/bgd-project.jpg',
+    tags: ['Solidity', 'React', 'WalletConnect', 'Ethers.js'],
+    source: 'https://github.com/Akay74/NFT-mint-DApp',
+    visit: 'https://nft.biggreendildo.org',
     id: 0,
   },
   {
