@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillTwitterCircle, AiOutlineWhatsApp } from 'react-icons/ai';
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, Anchor, NavLink, Span, SocialIcons } from './HeaderStyles';
 import { motion } from 'framer-motion';
 
@@ -87,8 +87,8 @@ const Header = (props) =>  (
         <AiFillGithub size="3rem" />
       </SocialIcons>
 
-      <SocialIcons href='https://wa.me/+2348183969173' target='_blank'>
-        <AiOutlineWhatsApp size="3rem" />
+      <SocialIcons href='https://www.linkedin.com/in/akay-udeh/' target='_blank'>
+        <AiFillLinkedin size="3rem" />
       </SocialIcons>
 
       <SocialIcons href='https://twitter.com/alpha_godhand' target='_blank'>
