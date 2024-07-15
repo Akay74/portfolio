@@ -40,7 +40,7 @@ const Hero = (props) => (
         transition:{
           duration: 0.5,
           delay: 1.2,
-      }}}>FullStack Engineer</TitleSubText><br/>
+      }}}>FullStack Web3 Engineer</TitleSubText><br/>
 
       <SectionText as={motion.p} initial={{
       y: 60,
